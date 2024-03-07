@@ -23,29 +23,11 @@ void input()
 	for (i = 0; i < 200; i++)
 	{
 		scanf("%hd", &test[i].number);
-		getchar();
-		for (j = 0; 1; j++)
-		{
-			scanf("%c", &c);
-			if (c == '\t') break;
-			test[i].name[j] = c;
-		}
+		scanf("%s", test[i].name);
 		scanf("%f", &test[i].credits);
-		getchar();
-		for (j = 0; 1; j++)
-		{
-			scanf("%c", &c);
-			if (c == '\t') break;
-			test[i].week[j] = c;
-		}
+		scanf("%s", test[i].week);
 		scanf("%hd%hd", &test[i].start, &test[i].end);
-		getchar();
-		for (j = 0; 1; j++)
-		{
-			scanf("%c", &c);
-			if (c == '\t') break;
-			test[i].type[j] = c;
-		}
+		scanf("%s", test[i].type);
 		scanf("%hd", &test[i].pre_num);
 	}
 }
